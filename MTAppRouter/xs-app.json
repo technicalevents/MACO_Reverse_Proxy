@@ -1,0 +1,13 @@
+{
+	"welcomeFile": "/destination_service_frontend/index.html",
+	"routes": [{
+		"source": "^/destination_service_frontend/(.*)$",
+		"target": "$1",
+		"localDir": "webapp"
+	}, {
+		"source": "^/approuter/route/(.*)$",
+		"target": "$1",
+		"csrfProtection": true,
+		"destination": "MTAppBackend_api"
+	}]
+}
